@@ -1,3 +1,4 @@
+import path from "path";
 import { defineConfig } from "vitest/config";
 
 export default defineConfig({
@@ -5,6 +6,7 @@ export default defineConfig({
     coverage: {
       provider: "istanbul",
     },
+    include: ["**/*.test.ts"],
   },
   build: {
     lib: {
@@ -21,6 +23,11 @@ export default defineConfig({
           "date-fns": "dateFns",
         },
       },
+    },
+  },
+  resolve: {
+    alias: {
+      src: path.resolve(__dirname, 'src'), // Permet "src/..." dans les imports
     },
   },
 });
