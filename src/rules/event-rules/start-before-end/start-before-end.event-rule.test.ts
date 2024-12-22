@@ -3,7 +3,7 @@ import { EventCandidate } from "src/events/event-candidate";
 import { StartBeforeEndEventRule } from "src/rules/event-rules/start-before-end/start-before-end.event-rule";
 import { describe, expect, it } from "vitest";
 
-describe("AlwaysPassingRule", () => {
+describe("AlwaysPassingEventRule", () => {
     it("should validate the event if start date is before end date", () => {
         const eventRule = new StartBeforeEndEventRule();
         const eventCandidate = new EventCandidate(
