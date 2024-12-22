@@ -7,24 +7,22 @@
       "esnext",
       "DOM"
     ],
-    /* Bundler mode */
     "moduleResolution": "bundler",
     "declaration": true,
     "allowImportingTsExtensions": true,
     "isolatedModules": true,
     "moduleDetection": "force",
     "noEmit": true,
-    /* Linting */
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "baseUrl": ".",
   },
   "include": [
     "src"
-  ],
-  "exclude": [
-    "src/**/*.test.ts",
   ],
 }
