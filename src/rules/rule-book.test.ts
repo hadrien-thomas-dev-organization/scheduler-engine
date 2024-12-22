@@ -31,7 +31,7 @@ describe("RuleBook", () => {
             expect(calendarCandidateValidation).toBe(true);
         });
 
-        it("should validate a calendar with a rule not passing", () => {
+        it("should not validate a calendar with a rule not passing", () => {
             const rulebook = new RuleBook();
             rulebook.addEventRule(new AlwaysPassingEventRule());
             rulebook.addEventRule(new NeverPassingEventRule());
